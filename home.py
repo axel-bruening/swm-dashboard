@@ -19,8 +19,7 @@ st.sidebar.markdown("Hier erhalten Sie auf einen Blick wertvolle Einblicke und D
 
 @st.cache_data
 def get_sponet_export_csv():
-    sponet_raw_df = pd.read_csv('C:/Users/bruening/Desktop/QMQS-All.csv', sep=';', header=None)
-    # sponet_raw_df = pd.read_csv('//iat/iks/db/exporte/SPONET-QMQS/QMQS-All.csv', sep=';', header=None)
+    sponet_raw_df = pd.read_csv('//iat/iks/db/exporte/SPONET-QMQS/QMQS-All.csv', sep=';', header=None)
     sponet_raw_df.columns = ['ID', 'ZS-Titel', 'originaler Titel', 'ausgewertet von', 'ausgewertet am', 'ZS-Auswerter',
                              'ZS-korrigiert am', 'Deskriptoren', 'Tagging']
     return sponet_raw_df
@@ -254,6 +253,7 @@ match option_kpi:
             st.caption(f"Zeitschriften pro Auswerter.")
 
     case "Themen":
+        #-- TODO: Zeitreihenanalyse statt Z-Score einbauen, um tatsächlich Trends in den Schlagwörtern zu erkennen.
         df_topics = fetch_topics_per_year_from_raw(sponet_df)
         st.dataframe(df_topics)
 
