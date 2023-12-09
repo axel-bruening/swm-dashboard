@@ -1,4 +1,4 @@
-# Contributing to swm-dashboard
+# Contributing to SWM-Dashboard
 
 👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 

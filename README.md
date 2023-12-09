@@ -1,6 +1,6 @@
-# swm-dashboard
+# SWM-Dashboard
 
-swm-dashboard ist ein Streamlit-basiertes Projekt für die grafische Aufbereitung von KPI aus der TG Wissensmanagement des IAT.
+SWM-Dashboard ist ein Streamlit-basiertes Projekt für die grafische Aufbereitung von KPI aus der TG Wissensmanagement des IAT.
 
 ## Installation
 
@@ -10,7 +10,7 @@ swm-dashboard ist ein Streamlit-basiertes Projekt für die grafische Aufbereitun
 
     ```bash
     git clone https://github.com/axel-bruening/swm-dashboard.git
-    cd streamlit-bikila
+    cd swm-dashboard
     ```
 
 2. Installiere die erforderlichen Pakete mit pip:
@@ -22,10 +22,10 @@ swm-dashboard ist ein Streamlit-basiertes Projekt für die grafische Aufbereitun
 3. Führe die Anwendung aus:
 
     ```bash
-    streamlit run app.py
+    streamlit run home.py
     ```
 
-    Öffne deinen Webbrowser und gehe zu [http://localhost:8501](http://localhost:8501), um die Wettkampfresultate grafisch aufbereitet zu sehen.
+    Öffne deinen Webbrowser und gehe zu [http://localhost:8501](http://localhost:8501), um das Dashboard zu sehen.
 
 ### Verwendung mit Docker
 
